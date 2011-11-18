@@ -434,8 +434,8 @@ describe Garterbelt::View do
               @view.should respond_to(type)
             end
           
-            it "makes a simple tag" do
-              @view.should_receive(:simple_tag).with(type.to_sym)
+            it "makes a simple tag without the leading underscore" do
+              @view.should_receive(:simple_tag).with(type.gsub('_', '').to_sym)
               @view.send(type)
             end
           end

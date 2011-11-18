@@ -245,7 +245,7 @@ module Garterbelt
     HEAD_TAGS.each do |type|
       class_eval <<-RUBY
         def #{type}(*args)
-          simple_tag(:#{type}, *args)
+          simple_tag(:#{type.gsub('_','')}, *args)
         end
       RUBY
     end
