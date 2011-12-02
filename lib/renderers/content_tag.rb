@@ -48,7 +48,7 @@ module Garterbelt
     end
     
     def compactize?
-      @compactize ||= style == :compact && !content.is_a?(Proc) 
+      @compactize ||= [:compact, :minified].include?(style) && !content.is_a?(Proc) 
     end
     
     def head
