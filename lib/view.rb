@@ -7,7 +7,7 @@ module Garterbelt
       self.initialization_options =  opts
       self._buffer = []
       self._level =  initialization_options.delete(:_level) || 0
-      self.render_style = initialization_options.delete(:style) || :pretty
+      self.render_style = initialization_options.delete(:style) || :minified
       self.output = ""
       self._escape = true
       self.block = block if block_given?
