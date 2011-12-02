@@ -65,9 +65,9 @@ describe Garterbelt::View do
       view.initialization_options.should == {:foo => 'foo', :bar => 'bar'}
     end
     
-    it 'render_style defaults to :pretty' do
+    it 'render_style defaults to :minified' do
       view = BasicView.new
-      view.render_style.should == :pretty
+      view.render_style.should == :minified
     end 
     
     describe 'setting the _curator: view responsible for displaying the rendered content' do

@@ -282,7 +282,7 @@ module Garterbelt
     end
     
     def self.default_render_style
-      @default_render_style ||= :pretty
+      @default_render_style ||= :minified
     end
     
     def self.default_content_method
