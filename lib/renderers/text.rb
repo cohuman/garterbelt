@@ -37,7 +37,7 @@ module Garterbelt
     end
     
     def line_end
-      style == :compact ? '' : super
+      [:minified, :compact].include?(style) ? '' : super
     end
     
     def template
