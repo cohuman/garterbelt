@@ -37,7 +37,7 @@ module Garterbelt
         ''
       else 
         head_end = if compactize?
-          view.render_style = :minimized
+          view.render_style = :minified
           ''
         else
           line_end
