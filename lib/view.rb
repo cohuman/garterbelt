@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Garterbelt
   class View
     attr_accessor :output, :_buffer, :_level, :_escape, :block, :initialization_options, :render_style

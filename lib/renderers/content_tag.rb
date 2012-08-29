@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Garterbelt
   class ContentTag < SimpleTag
     include ContentRendering

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module Garterbelt
   class SimpleTag < Renderer
     attr_accessor :type, :attributes, :css_class
